@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="THE HOPE JAMB & WAEC TUTORIAL — learn, prepare and succeed." />
+  <meta name="theme-color" content="#087443" />
+  <title>THE HOPE JAMB & WAEC TUTORIAL</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="The Hope home">
+      <span class="brand-mark">H</span>
+      <span><strong>THE HOPE</strong><small>JAMB & WAEC TUTORIAL</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">☰</button>
+    <nav id="mainNav">
+      <a href="#home">Home</a>
+      <a href="#programmes">Tutorials</a>
+      <a href="#about">About</a>
+      <a href="#payment">Payment</a>
+      <button class="btn btn-outline nav-login" data-open-auth="login">Student Login</button>
+      <button class="btn btn-yellow" data-open-auth="signup">Register</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-copy">
+        <span class="eyebrow"><span class="dot"></span> YOUR JOURNEY TO ACADEMIC SUCCESS STARTS HERE</span>
+        <h1>Learn with purpose.<br><span>Prepare with confidence.</span></h1>
+        <p>Get focused tutorial support for your JAMB and WAEC examinations with THE HOPE JAMB & WAEC TUTORIAL.</p>
+        <div class="hero-actions">
+          <button class="btn btn-yellow btn-large" data-open-auth="signup">Join the tutorial <span>→</span></button>
+          <a class="btn btn-light btn-large" href="#programmes">Explore tutorials</a>
+        </div>
+        <div class="hero-note"><span class="check">✓</span> Learn • Prepare • Improve • Succeed</div>
+      </div>
+      <div class="hero-art" aria-label="Education illustration">
+        <div class="art-glow"></div>
+        <div class="art-card art-card-main">
+          <div class="book-icon">✦</div>
+          <span class="art-kicker">YOUR NEXT CHAPTER</span>
+          <strong>Starts with<br>the right preparation.</strong>
+          <div class="art-lines"><i></i><i></i><i></i></div>
+        </div>
+        <div class="floating-card floating-top"><span>✓</span> Stay focused</div>
+        <div class="floating-card floating-bottom"><b>JAMB</b><span>+</span><b>WAEC</b></div>
+        <div class="art-circle circle-one"></div><div class="art-circle circle-two"></div>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <div><strong>JAMB</strong><span>UTME preparation</span></div>
+      <div><strong>WAEC</strong><span>Senior school exams</span></div>
+      <div><strong>₦1,500</strong><span>Monthly tutorial fee</span></div>
+    </section>
+
+    <section class="section programmes" id="programmes">
+      <div class="section-heading">
+        <span class="eyebrow">OUR TUTORIALS</span>
+        <h2>Prepare for your next big step.</h2>
+        <p>Choose the examination support you need and learn with a clear plan.</p>
+      </div>
+      <div class="programme-grid">
+        <article class="programme-card jamb-card">
+          <div class="programme-icon">J</div><span class="tag">UTME PREPARATION</span>
+          <h3>JAMB Tutorial</h3>
+          <p>Build understanding, practise examination questions and prepare for your UTME with guided learning.</p>
+          <button class="text-link" data-select-course="JAMB">Register for JAMB <span>→</span></button>
+        </article>
+        <article class="programme-card waec-card">
+          <div class="programme-icon">W</div><span class="tag">SSCE PREPARATION</span>
+          <h3>WAEC Tutorial</h3>
+          <p>Strengthen your subject knowledge and prepare for WAEC with structured tutorial support.</p>
+          <button class="text-link" data-select-course="WAEC">Register for WAEC <span>→</span></button>
+        </article>
+      </div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="section about-inner">
+        <div class="about-badge"><span>THE HOPE</span><strong>LEARN<br>PREPARE<br>SUCCEED</strong><i>✦</i></div>
+        <div>
+          <span class="eyebrow">ABOUT THE HOPE</span>
+          <h2>A supportive place to prepare and grow.</h2>
+          <p>THE HOPE JAMB & WAEC TUTORIAL is focused on helping students prepare for important examinations through learning support, practice and useful academic guidance.</p>
+          <ul class="check-list"><li>JAMB and WAEC tutorial support</li><li>Learning resources and announcements</li><li>Student account and tutorial access</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section payment-section" id="payment">
+      <div class="section-heading">
+        <span class="eyebrow">JOIN THE CLASS</span>
+        <h2>Simple monthly tutorial payment.</h2>
+        <p>Make your transfer using the account details below, then submit your payment reference or receipt for review.</p>
+      </div>
+      <div class="payment-card">
+        <div class="payment-price"><span>Monthly tutorial fee</span><strong>₦1,500</strong><small>per student / per month</small></div>
+        <div class="payment-details">
+          <div><span>Bank / wallet</span><strong>OPay</strong></div>
+          <div><span>Account name</span><strong>Oluwatomisin Hephzibah Apeh</strong></div>
+          <div class="account-row"><div><span>Account number</span><strong id="accountNumber">9071236941</strong></div><button class="copy-btn" id="copyAccount">Copy</button></div>
+        </div>
+        <p class="payment-note">After payment, log in or create an account and submit your payment evidence. Tutorial access is granted after the administrator confirms your payment.</p>
+        <button class="btn btn-green" data-open-auth="signup">Register and submit payment</button>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div><span class="eyebrow">TAKE THE NEXT STEP</span><h2>Your preparation can start today.</h2><p>Create your student account to get started.</p></div>
+      <button class="btn btn-yellow btn-large" data-open-auth="signup">Create student account →</button>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#home"><span class="brand-mark">H</span><span><strong>THE HOPE</strong><small>JAMB & WAEC TUTORIAL</small></span></a>
+    <p>Learn • Prepare • Improve • Succeed</p>
+    <small>© <span id="year"></span> THE HOPE JAMB & WAEC TUTORIAL. All rights reserved.</small>
+  </footer>
+
+  <!-- Authentication modal -->
+  <div class="modal hidden" id="authModal" role="dialog" aria-modal="true" aria-labelledby="authTitle">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-panel">
+      <button class="modal-close" data-close-modal aria-label="Close">×</button>
+      <div class="modal-brand">H</div>
+      <span class="eyebrow">THE HOPE STUDENT PORTAL</span>
+      <h2 id="authTitle">Create your account</h2>
+      <p class="modal-subtitle" id="authSubtitle">Join the tutorial community.</p>
+      <div class="auth-tabs"><button class="active" id="signupTab">Register</button><button id="loginTab">Login</button></div>
+      <form id="authForm">
+        <label id="nameField">Full name<input id="fullName" type="text" autocomplete="name" placeholder="Enter your full name" required></label>
+        <label>Email address<input id="email" type="email" autocomplete="email" placeholder="you@example.com" required></label>
+        <label>Password<input id="password" type="password" autocomplete="new-password" minlength="6" placeholder="At least 6 characters" required></label>
+        <label id="courseField">Tutorial programme
+          <select id="course"><option value="JAMB">JAMB</option><option value="WAEC">WAEC</option><option value="Both">Both JAMB and WAEC</option></select>
+        </label>
+        <button class="btn btn-green btn-full" id="authSubmit" type="submit">Create account</button>
+      </form>
+      <p class="form-message" id="authMessage" aria-live="polite"></p>
+      <small class="privacy-note">Your account is for tutorial access. Keep your password private.</small>
+    </div>
+  </div>
+
+  <!-- Student dashboard -->
+  <section class="dashboard hidden" id="dashboard">
+    <div class="dashboard-header">
+      <div><span class="eyebrow">STUDENT PORTAL</span><h2>Welcome, <span id="studentName">Student</span></h2><p>Manage your tutorial registration and monthly payment.</p></div>
+      <button class="btn btn-outline" id="logoutBtn">Log out</button>
+    </div>
+    <div class="dashboard-grid">
+      <article class="dash-card">
+        <span class="dash-label">YOUR PROGRAMME</span><h3 id="studentCourse">Not selected</h3><p>Selected tutorial programme</p>
+      </article>
+      <article class="dash-card">
+        <span class="dash-label">MONTHLY FEE</span><h3>₦1,500</h3><p>Per month</p>
+      </article>
+      <article class="dash-card">
+        <span class="dash-label">PAYMENT STATUS</span><h3 id="paymentStatus">Not submitted</h3><p id="paymentStatusHelp">Submit your payment details below.</p>
+      </article>
+    </div>
+    <div class="dashboard-columns">
+      <article class="dash-card payment-form-card">
+        <span class="eyebrow">PAYMENT CONFIRMATION</span><h3>Submit your payment</h3>
+        <p>Transfer ₦1,500 to the OPay account shown, then provide your transfer reference and optionally upload a receipt screenshot.</p>
+        <div class="mini-account"><strong>OPay · 9071236941</strong><span>Oluwatomisin Hephzibah Apeh</span></div>
+        <form id="paymentForm">
+          <label>Programme<select id="paymentCourse"><option value="JAMB">JAMB</option><option value="WAEC">WAEC</option><option value="Both">Both JAMB and WAEC</option></select></label>
+          <label>Payment month<input id="paymentMonth" type="month" required></label>
+          <label>Transfer reference / transaction ID<input id="paymentReference" type="text" placeholder="Enter your transfer reference" required></label>
+          <label>Receipt screenshot (optional)<input id="receiptFile" type="file" accept="image/png,image/jpeg,image/webp,application/pdf"></label>
+          <button class="btn btn-green btn-full" type="submit" id="paymentSubmit">Submit for verification</button>
+        </form>
+        <p class="form-message" id="paymentMessage" aria-live="polite"></p>
+      </article>
+      <article class="dash-card">
+        <span class="eyebrow">YOUR SUBMISSIONS</span><h3>Payment history</h3>
+        <div id="paymentHistory" class="history-list"><p class="muted">Your payment submissions will appear here.</p></div>
+      </article>
+    </div>
+
+    <div class="admin-panel hidden" id="adminPanel">
+      <div class="admin-heading"><div><span class="eyebrow">ADMINISTRATION</span><h3>Payment review</h3></div><span class="admin-chip">Admin access</span></div>
+      <p>Review student submissions. Confirm transfers in your OPay account before approving access.</p>
+      <div id="adminPayments" class="admin-list">Loading submissions…</div>
+    </div>
+  </section>
+
+  <div class="toast" id="toast" role="status"></div>
+</body>
+</html>
